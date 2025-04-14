@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Quiz App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="background-animation">
+        <div class="particles"></div>
+        <div class="particles"></div>
+        <div class="particles"></div>
+        <div class="particles"></div>
+        <div class="particles"></div>
+    </div>
+
+    <!-- Quiz Container -->
+    <div class="quiz-container">
+        <!-- Start Screen -->
+        <div class="start-screen active">
+            <h1 class="glow-text">Quiz Master</h1>
+            <p class="subtitle">Test your knowledge!</p>
+            <button class="start-btn">
+                <span>Start Quiz</span>
+                <div class="btn-particles"></div>
+            </button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div class="quiz-screen">
+            <div class="quiz-header">
+                <div class="timer">
+                    <i class="fas fa-clock"></i>
+                    <span id="time">30</span>
+                </div>
+                <div class="score">
+                    <i class="fas fa-star"></i>
+                    <span id="score">0</span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2 class="question" id="question"></h2>
+                <div class="options" id="options"></div>
+            </div>
+
+            <div class="quiz-footer">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <button class="next-btn">
+                    <span>Next Question</span>
+                    <div class="btn-particles"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div class="result-screen">
+            <div class="result-content">
+                <h2 class="result-title">Quiz Complete!</h2>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="final-score">0</span>
+                        <div class="score-ring"></div>
+                    </div>
+                </div>
+                <p class="result-message"></p>
+                <button class="restart-btn">
+                    <span>Try Again</span>
+                    <div class="btn-particles"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
